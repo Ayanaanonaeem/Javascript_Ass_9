@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var colorName=["red","yellow","blue","black","purple"]
+        document.write("colorName<br>")
+        document.write(colorName+"<br><br>")
+        var userColor=prompt('what color do you want add at the beginning of the array')
+        colorName.unshift(userColor)
+        document.write("colorName user wanted at the begining<br>")
+        document.write(colorName+"<br><br>")
+        var userColor2=prompt('what color do you want add at the end of the array')
+        colorName.push(userColor2)
+        document.write("colorName user wanted at the end of the array <br>")
+        document.write(colorName+"<br><br>")
+        
+        document.write("For adding color at the start of the array <br>")
+        colorName.unshift('green','grey')
+        document.write(colorName+"<br><br>")
+
+        document.write("For deleting color at the start of the array <br>")
+        colorName.shift()
+        document.write(colorName+"<br><br>")
+
+        document.write("For deleting color from the end of the array <br>")
+        colorName.pop()
+        document.write(colorName+"<br><br>")
+
+        var useradd=prompt('Which index do you wants to add color ')
+        var useradd1=prompt('Which color do you want to add')
+        document.write("user wanted to add color at index no "+useradd+" user want to add the "+useradd1+ " color<br>")
+        colorName.splice(useradd,0,useradd1)
+        document.write(colorName+"<br><br>")
+
+        var userdel=prompt('Which index do you wants to delete color ')
+        var userdel1=prompt('And how many color do you want to delete ')
+        document.write("user wanted to delete color at index no "+userdel+" user want to delete the "+userdel1+ " color<br>")
+        colorName.splice(userdel,userdel1)
+        document.write(colorName+"<br>")
+
+    </script>
+</body>
+</html>
